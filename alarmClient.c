@@ -57,7 +57,7 @@ int main(void){
         char parsingData[MAXLINE];
 
         while ( (nread = Read(pipe,&len,sizeof(int))) < 0 ){}
-        while  ( (nread = Read(pipe,parsingData,len)) < 0 ){};
+        while  ( (nread = Read(pipe,parsingData,len)) < 0 ){}
 
         Close(pipe);
         unlink(FIFO);
